@@ -1,0 +1,189 @@
+html 1
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Aplicativo de Feedback</title>
+    <link rel="stylesheet" href="desafio.css">
+    <script src="desafio.js"></script>
+</head>
+
+<body>
+     <section class="container">
+
+<div class="containerUm">
+
+    <h1>Bem-vindo ao Prêmio Talentinho Front-end!</h1>
+        <h2> Equipe: Zero talentos </h2>
+        <h3>Membros:<br><br>Kauã Osório<br>Joaquim Davila<br>Victor Dickel<br>Caio Cabral<br>Felipe Lima</h3>
+        <h4>Tema da Aplicação: Privacidade e Segurança de Dados</h4>
+
+        <nav class="tela1"> <a href="tela2.html"> <button> ir para próxima tela </button></a> </nav>
+</div>
+   
+     </section>
+
+
+</body>
+</html>
+
+Css 1
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.containerUm {
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    width: 300px;
+    padding: 15px;
+    box-shadow: 20px 20px 25px black;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin-top: 90px;
+}
+
+Html 2
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="tela2.css">
+</head>
+<body>
+    
+    <section class="container">
+
+        <div class="containerUm">
+        
+            <h2>Segurança dos Dados</h2>
+        <p> A segurança dos dados é vital para proteger informações pessoais contra acessos não autorizados e vazamentos. Medidas como criptografia, autenticação multifator e protocolos de segurança robustos são essenciais para garantir que os dados sejam mantidos em segurança.</p>
+        
+               
+        </div>
+
+        <div class="containerUm">
+        
+            <h2>Conteúdo Informativo</h2>
+        <p>A privacidade e segurança de dados são essenciais em um mundo digital. Proteger informações pessoais e respeitar os direitos dos usuários não só é uma obrigação legal, mas também um fator crítico para a construção de confiança e reputação em qualquer organização. A implementação de boas práticas em ambos os aspectos ajuda a mitigar riscos e a garantir que os dados sejam tratados de maneira ética e segura.</p>
+        
+                <nav class="tela1"> <a href="tela3.html"> <button> ir para tela de feedback </button></a> </nav>
+        </div>
+
+        <div class="containerUm">
+        
+            <h2>Importância</h2>
+        <p> Com o aumento da digitalização e da coleta de dados, a proteção de dados e a privacidade se tornaram cruciais. As pessoas estão cada vez mais preocupadas com como suas informações são tratadas, especialmente em relação a:</p>
+        <ul>
+            <li> Segurança de informações sensíveis (como dados bancários, de saúde e pessoais).</li>
+            <br>
+            <li> Prevenção de fraudes e roubo de identidade.</li>
+            <br>
+            <li> Confiança nas empresas e plataformas digitais.</li>
+        </ul>
+               
+        </div>
+           
+             </section>
+
+</body>
+</html>
+
+CSS 2
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.containerUm {
+    margin: 90px 50px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    width: 300px;
+    padding: 15px;
+    box-shadow: 20px 20px 25px black;
+    border: 1px solid black;
+    border-radius: 20px;
+    
+}
+
+Html 3 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tela3.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <section class="container">
+
+        <div class="containerUm">
+        
+            <h3>Deixe seu Feedback</h3>
+        <button id="btn-curtir">Curtir 👍</button>
+        <p id="contador-curtidas">Curtidas: 0</p>
+        <form id="form-feedback">
+            <label for="nome">Seu nome:</label>
+            <input type="text" id="nome" placeholder="Digite seu nome" required>
+            <label for="mensagem">Sua mensagem:</label>
+            <textarea id="mensagem" rows="4" cols="50" placeholder="Escreva sua mensagem" required></textarea>
+            <button type="submit">Enviar Feedback</button>
+        </form>
+        </div>
+           
+             </section>
+
+</body>
+</html>
+
+Css 3
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.containerUm {
+    margin-top: 90px;
+    display: flex;
+    flex-direction: column;
+   
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    width: 300px;
+    padding: 15px;
+    box-shadow: 20px 20px 25px black;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+#form-feedback{
+    flex-direction: column;
+    width: 200px; 
+}
+
+#mensagem{ 
+    width: 200px;
+}
