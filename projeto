@@ -18,7 +18,7 @@ html 1
 
     <h1>Bem-vindo ao Prêmio Talentinho Front-end!</h1>
         <h2> Equipe: Zero talentos </h2>
-        <h3>Membros:<br><br>Kauã Osório<br>Joaquim Davila<br>Victor Dickel<br>Caio Cabral<br>Felipe Lima</h3>
+        <h3>Membros:<br><br>Kauã Osório<br>Joaquim Davila<br>Victor Dickel<br>Caio Cabral<br>Felipe Lima<br>Rafael Almeida</h3>
         <h4>Tema da Aplicação: Privacidade e Segurança de Dados</h4>
 
         <nav class="tela1"> <a href="tela2.html"> <button> ir para próxima tela </button></a> </nav>
@@ -40,16 +40,36 @@ Css 1
 .containerUm {
     display: flex;
     flex-direction: column;
-    
+    background-color: white;
     align-items: center;
     justify-content: center;
     height: 400px;
     width: 300px;
-    padding: 15px;
+    padding: 25px;
     box-shadow: 20px 20px 25px black;
     border: 1px solid black;
     border-radius: 20px;
     margin-top: 90px;
+    font-size: 13px;
+    
+}
+button {
+    background-color: rgb(59, 106, 138) ;
+    color: white;
+    border-radius: 10px;
+    padding: 13px;
+    border: none;
+}
+
+button:hover {
+    background-color: rgb(43, 76, 99) ;
+    color: white;
+}
+
+body {
+    background-image: url(https://images.pexels.com/photos/1108572/pexels-photo-1108572.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 Html 2
@@ -109,6 +129,7 @@ CSS 2
     justify-content: center;
 }
 .containerUm {
+    background-color: white;
     margin: 90px 50px 0px 0px;
     display: flex;
     flex-direction: column;
@@ -124,6 +145,25 @@ CSS 2
     
 }
 
+button {
+    background-color: rgb(59, 106, 138) ;
+    color: white;
+    border-radius: 10px;
+    padding: 13px;
+    border: none;
+}
+
+button:hover {
+    background-color: rgb(43, 76, 99) ;
+    color: white;
+}
+
+body {
+    background-image: url(https://images.pexels.com/photos/1108572/pexels-photo-1108572.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 Html 3 
 
 <!DOCTYPE html>
@@ -132,12 +172,11 @@ Html 3
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="tela3.css">
+    <script src="desafio.js"></script>
     <title>Document</title>
 </head>
 <body>
-    
-    <section class="container">
-
+        <section class="container">
         <div class="containerUm">
         
             <h3>Deixe seu Feedback</h3>
@@ -149,15 +188,27 @@ Html 3
             <label for="mensagem">Sua mensagem:</label>
             <textarea id="mensagem" rows="4" cols="50" placeholder="Escreva sua mensagem" required></textarea>
             <button type="submit">Enviar Feedback</button>
+<br>
+            <div id="feedback-resultado"></div>
+        </div>
         </form>
         </div>
-           
-             </section>
+
+    </section>
+
+    <footer>
+        <div id="coco">
+            <a href="desafio.html"> <button id="larara">voltar</button></a>
+        </div>
+    </footer>
+
+
 
 </body>
 </html>
 
 Css 3
+
 
 .container {
     display: flex;
@@ -168,7 +219,7 @@ Css 3
     margin-top: 90px;
     display: flex;
     flex-direction: column;
-   
+    background-color: white;
     align-items: center;
     justify-content: center;
     height: 400px;
@@ -183,7 +234,38 @@ Css 3
     flex-direction: column;
     width: 200px; 
 }
+button {
+    background-color: rgb(59, 106, 138) ;
+    color: white;
+    border-radius: 10px;
+    padding: 13px;
+    border:  none;
+}
+
+button:hover {
+    background-color: rgb(43, 76, 99) ;
+    color: white;
+}
+
 
 #mensagem{ 
     width: 200px;
+}
+
+body {
+    background-image: url(https://images.pexels.com/photos/1108572/pexels-photo-1108572.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+footer{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+#larara{
+    height: 50px;
+    width: 70px;
 }
